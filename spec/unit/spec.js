@@ -1,6 +1,6 @@
 
 describe 'roman()'
-	it 'should compute compute single digit romans'
+	it 'should compute single digit romans'
 		roman('I').should.be 1
 		roman('V').should.be 5
 		roman('X').should.be 10
@@ -16,7 +16,7 @@ describe 'roman()'
 		roman('XVI').should.be 16
 	end
 	
-	it 'should compute subtractions'
+	it 'should compute romans with subtractions'
 		roman('IV').should.be 4
 		roman('MCMXC').should.be 1990
 		roman('CDXLIV').should.be 444
