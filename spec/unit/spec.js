@@ -1,4 +1,19 @@
 describe 'roman()'
+	var testcases = {
+		I: 1,
+		II: 2,
+		III: 3
+	}
+
+	for (testcase in testcases) {
+		JSpec.context = { input: testcase, expected: testcases[testcase] };
+
+		it 'should '+testcase+' '+testcases[testcase]
+		  roman(input).should.be expected
+		end
+	};
+
+
 	it 'should compute single digit romans'
 	  roman('I').should.be 1
 	  roman('V').should.be 5
