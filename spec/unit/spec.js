@@ -21,8 +21,4 @@ describe 'roman()'
 	  roman('CDXLIV').should.be 444
 	  roman('CMXCIX').should.be 999
 	end
-	
-	it 'should compute some meaningless year number'
-	  roman('MCMLXXII').should.be 1972
-	end
 end
