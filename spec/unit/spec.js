@@ -9,13 +9,13 @@ describe 'roman()'
 		roman('M').should.be 1000
 	end
 	
-	it 'should compute romans with additive digits'
+	it 'should compute additive digits'
 		roman('II').should.be 2
 		roman('CX').should.be 110
-		roman('XVI').should.be 16		
+		roman('XVI').should.be 16
 	end
 	
-	it 'should compute romans with subtractions'
+	it 'should compute subtractive digits'
 		roman('IV').should.be 4
 		roman('XIV').should.be 14
 		roman('XL').should.be 40
