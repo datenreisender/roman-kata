@@ -1,5 +1,5 @@
 describe 'roman()'
-	it 'should compute single digit romans'
+	it 'should compute single digits'
 		roman('I').should.be 1
 		roman('V').should.be 5
 		roman('X').should.be 10

@@ -4,8 +4,6 @@ load('/Library/Ruby/Gems/1.8/gems/jspec-4.1.0/lib/jspec.xhr.js')
 load('lib/roman.js')
 load('spec/unit/spec.helper.js')
 
-load('/Users/ms/lib/jspec.growl.js')
-
 JSpec
 .exec('spec/unit/spec.js')
 .run({ reporter: JSpec.reporters.Terminal, fixturePath: 'spec/fixtures' })
