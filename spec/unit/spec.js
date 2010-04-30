@@ -1,5 +1,5 @@
 describe 'roman()'
-	it 'should compute single digits'
+	it 'computes single digits'
 		roman('I').should.be 1
 		roman('V').should.be 5
 		roman('X').should.be 10
@@ -9,13 +9,13 @@ describe 'roman()'
 		roman('M').should.be 1000
 	end
 	
-	it 'should compute additive digits'
+	it 'computes additive digits'
 		roman('II').should.be 2
 		roman('CX').should.be 110
 		roman('XVI').should.be 16
 	end
 	
-	it 'should compute subtractive digits'
+	it 'computes subtractive digits'
 		roman('IV').should.be 4
 		roman('XIV').should.be 14
 		roman('XL').should.be 40
@@ -23,7 +23,8 @@ describe 'roman()'
 		roman('CMXCIX').should.be 999
 	end
 	
-	it 'should compute some meaningless year'
+	it 'computes any meaningless number of year'
 		roman('MCMLXXII').should.be 1972
+		
 	end
 end
