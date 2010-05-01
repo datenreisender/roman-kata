@@ -10,21 +10,20 @@ describe 'roman()'
 	end
 	
 	it 'computes additive digits'
-		roman('II').should.be 2
+		roman('VI').should.be 6
 		roman('CX').should.be 110
 		roman('XVI').should.be 16
 	end
 	
 	it 'computes subtractive digits'
-		roman('IV').should.be 4
-		roman('XIV').should.be 14
 		roman('XL').should.be 40
+		roman('XLI').should.be 41
+		roman('IV').should.be 4
 		roman('CDXLIV').should.be 444
 		roman('CMXCIX').should.be 999
 	end
 	
 	it 'computes any meaningless number of year'
 		roman('MCMLXXII').should.be 1972
-		
 	end
 end
